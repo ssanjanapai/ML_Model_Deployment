@@ -8,6 +8,7 @@ Later ,this model was fed into Flask. Docker was used to containerize this Flask
 
 Docker daemon used to build the docker image.
 
+'''
 FROM python:3.6-slim
 COPY ./app.py /deploy/
 COPY ./requirements.txt /deploy/
@@ -16,6 +17,7 @@ WORKDIR /deploy/
 RUN pip install -r requirements.txt
 EXPOSE 80
 ENTRYPOINT ["python", "app.py"]
+'''
 
 Build and run this image by commands:
 docker build -t app-iris .
