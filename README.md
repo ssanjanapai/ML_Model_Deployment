@@ -6,7 +6,7 @@ This model gave the accuracy of 93%.
 
 Later ,this model was fed into Flask. Docker was used to containerize this Flask app.
 
-Docker daemon used to build the docker image.
+Docker daemon used to build the docker image:
 
 ```
 FROM python:3.6-slim
